@@ -1,156 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich & Omar</title>
 
-<title>Mich & Omar ❤️</title>
+    <link rel="stylesheet" href="style.css">
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial, Helvetica, sans-serif;
-background:linear-gradient(135deg,#140018,#2d003d,#46005f);
-color:white;
-overflow-x:hidden;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-h1{
-font-size:65px;
-margin-bottom:15px;
-}
-
-.fecha{
-font-size:22px;
-opacity:.9;
-margin-bottom:30px;
-}
-
-button{
-padding:18px 40px;
-font-size:20px;
-border:none;
-border-radius:40px;
-background:#ff4fa3;
-color:white;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.08);
-}
-
-.historia{
-padding:80px 20px;
-max-width:900px;
-margin:auto;
-text-align:center;
-}
-
-.card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(10px);
-padding:30px;
-border-radius:25px;
-margin-top:30px;
-}
-
-#contador{
-font-size:32px;
-margin-top:25px;
-font-weight:bold;
-color:#ffd4ea;
-}
-</style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<section class="hero">
+<div class="overlay"></div>
 
-<h1>💜 Mich & Omar 💜</h1>
+<header class="hero">
 
-<div class="fecha">
-Juntos desde el <b>30 de diciembre de 2025</b>
-</div>
+    <h1>Mich & Omar</h1>
 
-<button onclick="document.getElementById('historia').scrollIntoView({behavior:'smooth'})">
-Nuestra Historia ❤️
-</button>
+    <p class="subtitle">
+        Nuestra historia merece ser recordada para siempre.
+    </p>
 
-<div id="contador"></div>
+    <a href="#historia" class="boton">
+        Comenzar
+    </a>
 
-</section>
+</header>
 
-<section class="historia" id="historia">
+<section id="historia">
 
-<div class="card">
+    <h2>Nuestra Historia</h2>
 
-<h2>El comienzo</h2>
-
-<br>
-
-<p>
-Nuestro primer beso fue el
-<strong>18 de septiembre de 2025.</strong>
-</p>
-
-<br>
-
-<p>
-Esta página es un pequeño espacio para guardar nuestra historia,
-recordar nuestros momentos y seguir construyendo un futuro juntos.
-</p>
-
-</div>
+    <p>
+        Todo comenzó mucho antes de que supiéramos
+        cuánto significaríamos el uno para el otro.
+    </p>
 
 </section>
 
-<script>
-
-const inicio=new Date("2025-12-30T00:00:00");
-
-function actualizar(){
-
-const ahora=new Date();
-
-const diferencia=ahora-inicio;
-
-const dias=Math.floor(diferencia/1000/60/60/24);
-
-const horas=Math.floor((diferencia/1000/60/60)%24);
-
-const minutos=Math.floor((diferencia/1000/60)%60);
-
-const segundos=Math.floor((diferencia/1000)%60);
-
-document.getElementById("contador").innerHTML=
-dias+" días<br>"+horas+" horas "+minutos+" minutos "+segundos+" segundos";
-
-}
-
-setInterval(actualizar,1000);
-
-actualizar();
-
-</script>
+<script src="script.js"></script>
 
 </body>
-</html>T
+</html>
