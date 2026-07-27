@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich & Omar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<header class="hero">
+
+    <h1>Mich & Omar</h1>
+
+    <p class="subtitle">
+        Nuestra historia merece ser recordada para siempre.
+    </p>
+
+    <a href="#historia" class="boton">
+        Comenzar
+    </a>
+
+</header>
+
+<section id="historia">
+
+    <h2>Nuestra Historia</h2>
+
+    <p>
+        Todo comenzó mucho antes de que supiéramos
+        cuánto significaríamos el uno para el otro.
+    </p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
